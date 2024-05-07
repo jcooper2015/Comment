@@ -2,8 +2,9 @@ global-exclude *.py[cod]
 include VERSION
 include README
 include pyproject.toml
-recursive-include comment *.py
-recursive-include comment/static *
-recursive-include comment/templates *
-recursive-include docs/source *
+include_package_data = True
+include comment/*.py
+include comment/static/*
+include comment/templates/*
+include docs/source/*
 prune comment/tests
